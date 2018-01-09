@@ -8,7 +8,8 @@ document.addEventListener('DOMContentLoaded', function(){
     }
 
     ReactDOM.render(
-        <div>
+        <div id={"xyz"}>
+            <img id={"xx"} src="../img/logo.png" alt=""/>
             <Hello name="Kasia" surname="Kowalska" />
             <Hello name="Kasia" surname="Nosowka" />
         </div>,

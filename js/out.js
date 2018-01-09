@@ -9397,7 +9397,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     _reactDom2.default.render(_react2.default.createElement(
         'div',
-        null,
+        { id: "xyz" },
+        _react2.default.createElement('img', { id: "xx", src: '../img/logo.png', alt: '' }),
         _react2.default.createElement(Hello, { name: 'Kasia', surname: 'Kowalska' }),
         _react2.default.createElement(Hello, { name: 'Kasia', surname: 'Nosowka' })
     ), document.getElementById('app'));
