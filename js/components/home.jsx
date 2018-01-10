@@ -1,5 +1,15 @@
 import React from 'react';
 
+function  Button() {
+    return (
+        <div id={"button"}>
+            <p>Can you build the website of my dreams ?</p>
+            <p>YUP, WE CAN DO THAT.</p>
+            <button>Learn More</button>
+        </div>
+    )
+}
+
 function  Link(props) {
     return (
         <li>
@@ -12,7 +22,10 @@ function  Link(props) {
 function Header() {
     return (
         <div id={'header'}>
-            <img src="assets/logo.png" alt=""/>
+            <div id={'logo'}>
+                <img src="assets/logo.png" alt=""/>
+                <p>ESCAPE</p>
+            </div>
             <nav>
                 <ul>
                     <Link link={"#"} name={"Home"}/>
@@ -26,12 +39,11 @@ function Header() {
     );
 }
 
-
-
 function Home() {
     return (
         <div id={'home'}>
             <Header/>
+            <Button/>
         </div>
     );
 }

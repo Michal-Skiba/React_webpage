@@ -9394,6 +9394,10 @@ var _home = __webpack_require__(178);
 
 var _home2 = _interopRequireDefault(_home);
 
+var _services = __webpack_require__(186);
+
+var _services2 = _interopRequireDefault(_services);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 //import Services from './components/services.jsx';
@@ -9404,11 +9408,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 _reactDom2.default.render(_react2.default.createElement(
     'div',
     { id: "body" },
-    _react2.default.createElement(_home2.default, null)
+    _react2.default.createElement(_home2.default, null),
+    _react2.default.createElement(_services2.default, null)
 ), document.getElementById('app'));
 /*
 
-<Services/>
+
 <Clients/>
 <Team/>
 <Contact/>
@@ -21650,6 +21655,28 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function Button() {
+    return _react2.default.createElement(
+        'div',
+        { id: "button" },
+        _react2.default.createElement(
+            'p',
+            null,
+            'Can you build the website of my dreams ?'
+        ),
+        _react2.default.createElement(
+            'p',
+            null,
+            'YUP, WE CAN DO THAT.'
+        ),
+        _react2.default.createElement(
+            'button',
+            null,
+            'Learn More'
+        )
+    );
+}
+
 function Link(props) {
     return _react2.default.createElement(
         'li',
@@ -21666,7 +21693,16 @@ function Header() {
     return _react2.default.createElement(
         'div',
         { id: 'header' },
-        _react2.default.createElement('img', { src: 'assets/logo.png', alt: '' }),
+        _react2.default.createElement(
+            'div',
+            { id: 'logo' },
+            _react2.default.createElement('img', { src: 'assets/logo.png', alt: '' }),
+            _react2.default.createElement(
+                'p',
+                null,
+                'ESCAPE'
+            )
+        ),
         _react2.default.createElement(
             'nav',
             null,
@@ -21687,11 +21723,42 @@ function Home() {
     return _react2.default.createElement(
         'div',
         { id: 'home' },
-        _react2.default.createElement(Header, null)
+        _react2.default.createElement(Header, null),
+        _react2.default.createElement(Button, null)
     );
 }
 
 exports.default = Home;
+
+/***/ }),
+/* 179 */,
+/* 180 */,
+/* 181 */,
+/* 182 */,
+/* 183 */,
+/* 184 */,
+/* 185 */,
+/* 186 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(52);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Services() {
+    return _react2.default.createElement("div", { className: "container" });
+}
+
+exports.default = Services;
 
 /***/ })
 /******/ ]);
