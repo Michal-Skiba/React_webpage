@@ -1,19 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Home from './components/home.jsx';
+//import Services from './components/services.jsx';
+//import Clients from './components/Clients.jsx';
+//import Team from './components/team.jsx';
+//import Contact from './components/contact.jsx';
 
-document.addEventListener('DOMContentLoaded', function(){
+ReactDOM.render(
+    <div id={"body"}>
+        <Home/>
+    </div>,
+    document.getElementById('app')
+);
+/*
 
-    function Hello(props) {
-        return <h1>Hello, {props.name} {props.surname}</h1>
-    }
-
-    ReactDOM.render(
-        <div id={"xyz"}>
-            <img id={"xx"} src="./assets/logo.png" alt=""/>
-            <Hello name="Kasiaaa" surname="Kowalska" />
-            <Hello name="Kasia" surname="Nosowka" />
-        </div>,
-        document.getElementById('app')
-    );
-});
-
+<Services/>
+<Clients/>
+<Team/>
+<Contact/>
+*/

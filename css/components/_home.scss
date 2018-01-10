@@ -1,0 +1,75 @@
+@import "../variables/variables";
+
+@media screen and (min-width: 320px) {
+  #home{
+    width: 100vw;
+    height: 620px;
+    background: url('../../assets/background.png') no-repeat center/cover;
+    font: $sans;
+    img{
+      margin: 4vh auto;
+      height: 50px;
+      width: 200px;
+    }
+    #header {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-self: center;
+      nav {
+        margin-top: 2vh;
+        ul {
+          list-style-type: none;
+          display: flex;
+          flex-flow: row;
+          li {
+            margin: 0 auto;
+            font-size: 1.1Rem;
+            a {
+              text-decoration: none;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 760px) {
+  #home{
+    img{
+      height: 50px;
+      width: 200px;
+      margin: 8vh 0 0 8vw;
+    }
+    #header {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      nav {
+        margin-top: 9vh;
+        ul {
+          margin-right: 40px;
+          li {
+            margin-left: 20px;
+            font-size: 1.5Rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #home{
+    img{
+      margin: 8vh 0 0 0;
+    }
+    #header {
+      justify-content: space-around;
+    }
+  }
+}

@@ -1,7 +1,87 @@
-#xyz {
-  background: yellow;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'arial', sans-serif;
 }
 
-#xx {
-  margin-left: 400px;
+@media screen and (min-width: 320px) {
+  #home {
+    width: 100vw;
+    height: 620px;
+    background: url(../assets/background.png) no-repeat center/cover;
+    font: "PT Sans", sans-serif;
+  }
+
+  #home img {
+    margin: 4vh auto;
+    height: 50px;
+    width: 200px;
+  }
+
+  #home #header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+
+  #home #header nav {
+    margin-top: 2vh;
+  }
+
+  #home #header nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row;
+  }
+
+  #home #header nav ul li {
+    margin: 0 auto;
+    font-size: 1.1Rem;
+  }
+
+  #home #header nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  #home img {
+    height: 50px;
+    width: 200px;
+    margin: 8vh 0 0 8vw;
+  }
+
+  #home #header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #home #header nav {
+    margin-top: 9vh;
+  }
+
+  #home #header nav ul {
+    margin-right: 40px;
+  }
+
+  #home #header nav ul li {
+    margin-left: 20px;
+    font-size: 1.5Rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #home img {
+    margin: 8vh 0 0 0;
+  }
+
+  #home #header {
+    justify-content: space-around;
+  }
 }
