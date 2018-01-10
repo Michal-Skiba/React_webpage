@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', function(){
 
     ReactDOM.render(
         <div id={"xyz"}>
-            <img id={"xx"} src="../img/logo.png" alt=""/>
-            <Hello name="Kasia" surname="Kowalska" />
+            <img id={"xx"} src="./assets/logo.png" alt=""/>
+            <Hello name="Kasiaaa" surname="Kowalska" />
             <Hello name="Kasia" surname="Nosowka" />
         </div>,
         document.getElementById('app')
