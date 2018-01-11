@@ -3,8 +3,10 @@ import React from 'react';
 function Title() {
     return (
         <div id={"title"}>
-            <p>Awesone <b>Clients</b></p>
-            <p>See what nice things our clients said about us</p>
+            <a name={'client'}>
+                <p>Awesone <b>Clients</b></p>
+                <p>See what nice things our clients said about us</p>
+            </a>
         </div>
     );
 }

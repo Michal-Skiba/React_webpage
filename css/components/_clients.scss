@@ -3,7 +3,7 @@
 @media screen and (min-width: 320px) {
   //Client nie trzeba zmienić przy innych mediach oprocz wysokości
   #client{
-    height: 1000px;
+    height: 1050px;
     background: $backgroundIndentity;
     #title{
       margin: 0 auto;
@@ -35,13 +35,11 @@
     #clientsRow1 {
       .circleClient {
         background: url("assets/junior.jpg")no-repeat center/cover;
-
       }
     }
     #clientsRow2 {
       .circleClient {
         background: url("assets/mr.jpg")no-repeat center/cover;
-
       }
     }
     .display{
@@ -165,34 +163,23 @@
   }
 
   #clients{
-    width: 940px; //
+    width: 940px;
     .circleClient{
-      width: 220px; //
-      height: 220px; //
+      width: 220px;
+      height: 220px;
       margin-top: 50px;
     }
     #clientsRow1 {
-      width: 100%; //
+      width: 100%;
       display: flex;
       flex-direction: row;
-      .circleClient {
-        background: url("assets/junior.jpg")no-repeat center/cover;
-      }
     }
     #clientsRow2 {
       display: flex;
       flex-direction: row;
-      width: 100%; //
-      .circleClient {
-        display:none;
-      }
-      .display{
-        display: block;
-        background: url("assets/mr.jpg")no-repeat center/cover;
-      }
+      width: 100%;
+      margin-bottom: 0;
     }
-
-
     .talk{
       height: 160px;
       width: 630px;
@@ -211,5 +198,9 @@
         left: 325px;
       }
     }
+  }
+
+  #logos{
+    margin: 50px auto 0 auto;
   }
 }

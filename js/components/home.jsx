@@ -24,16 +24,17 @@ function Header() {
     return (
         <div id={'header'}>
             <div id={'logo'}>
+                <a name={'home'}></a>
                 <img src="assets/logo.png" alt=""/>
                 <p>ESCAPE</p>
             </div>
             <nav>
                 <ul>
-                    <Link link={"#"} name={"Home"}/>
-                    <Link link={"#"} name={"Services"}/>
-                    <Link link={"#"} name={"Clients"}/>
-                    <Link link={"#"} name={"Team"}/>
-                    <Link link={"#"} name={"Contact"}/>
+                    <Link link={"#home"} name={"Home"}/>
+                    <Link link={"#services"} name={"Services"}/>
+                    <Link link={"#client"} name={"Clients"}/>
+                    <Link link={"#team"} name={"Team"}/>
+                    <Link link={"#contact"} name={"Contact"}/>
                 </ul>
             </nav>
         </div>
