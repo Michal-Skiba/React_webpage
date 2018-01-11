@@ -21892,10 +21892,119 @@ exports.default = Services;
 
 /***/ }),
 /* 180 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-throw new Error("Module build failed: SyntaxError: D:\\Programowanie\\ProjektyGit\\React Webpage\\package.json: Error while parsing JSON - Unexpected token } in JSON at position 1001\n    at JSON.parse (<anonymous>)\n    at ConfigChainBuilder.addConfig (D:\\Programowanie\\ProjektyGit\\React Webpage\\node_modules\\babel-core\\lib\\transformation\\file\\options\\build-config-chain.js:150:65)\n    at ConfigChainBuilder.findConfigs (D:\\Programowanie\\ProjektyGit\\React Webpage\\node_modules\\babel-core\\lib\\transformation\\file\\options\\build-config-chain.js:102:30)\n    at buildConfigChain (D:\\Programowanie\\ProjektyGit\\React Webpage\\node_modules\\babel-core\\lib\\transformation\\file\\options\\build-config-chain.js:61:13)\n    at OptionManager.init (D:\\Programowanie\\ProjektyGit\\React Webpage\\node_modules\\babel-core\\lib\\transformation\\file\\options\\option-manager.js:354:58)\n    at File.initOptions (D:\\Programowanie\\ProjektyGit\\React Webpage\\node_modules\\babel-core\\lib\\transformation\\file\\index.js:212:65)\n    at new File (D:\\Programowanie\\ProjektyGit\\React Webpage\\node_modules\\babel-core\\lib\\transformation\\file\\index.js:135:24)\n    at Pipeline.transform (D:\\Programowanie\\ProjektyGit\\React Webpage\\node_modules\\babel-core\\lib\\transformation\\pipeline.js:46:16)\n    at transpile (D:\\Programowanie\\ProjektyGit\\React Webpage\\node_modules\\babel-loader\\lib\\index.js:50:20)\n    at Object.module.exports (D:\\Programowanie\\ProjektyGit\\React Webpage\\node_modules\\babel-loader\\lib\\index.js:175:20)");
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(25);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Title() {
+    return _react2.default.createElement(
+        "div",
+        { id: "title" },
+        _react2.default.createElement(
+            "p",
+            null,
+            "Awesone ",
+            _react2.default.createElement(
+                "b",
+                null,
+                "Clients"
+            )
+        ),
+        _react2.default.createElement(
+            "p",
+            null,
+            "See what nice things our clients said about us"
+        )
+    );
+}
+function Clients() {
+    return _react2.default.createElement(
+        "div",
+        { id: "clients" },
+        _react2.default.createElement(
+            "div",
+            { id: "clientsRow1" },
+            _react2.default.createElement("div", { className: "circleClient" }),
+            _react2.default.createElement(
+                "div",
+                { className: "talk" },
+                _react2.default.createElement(
+                    "div",
+                    { id: "triangleLeft", className: "triangle" },
+                    " "
+                ),
+                _react2.default.createElement(
+                    "p",
+                    null,
+                    "\"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, debitis dolor doloremque doloribus, eius eligendi enim error in\""
+                ),
+                _react2.default.createElement(
+                    "p",
+                    null,
+                    "-Bart Thomson, Founder Of Rainel"
+                )
+            )
+        ),
+        _react2.default.createElement(
+            "div",
+            { id: "clientsRow2" },
+            _react2.default.createElement("div", { className: "circleClient" }),
+            _react2.default.createElement(
+                "div",
+                { className: "talk" },
+                _react2.default.createElement(
+                    "div",
+                    { id: "triangleRight", className: "triangle" },
+                    " "
+                ),
+                _react2.default.createElement(
+                    "p",
+                    null,
+                    "\"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, debitis dolor doloremque doloribus, eius eligendi enim error in\""
+                ),
+                _react2.default.createElement(
+                    "p",
+                    null,
+                    "-Jamie Richardson, Founder Of Cocoa Media"
+                )
+            ),
+            _react2.default.createElement("div", { className: "circleClient display" })
+        )
+    );
+}
+function Logos() {
+    return _react2.default.createElement(
+        "div",
+        { id: "logos" },
+        _react2.default.createElement("img", { src: "assets/envato_icon.png", alt: "" }),
+        _react2.default.createElement("img", { src: "assets/wordpress_icon.png", alt: "" }),
+        _react2.default.createElement("img", { src: "assets/tuts_icon.png", alt: "" }),
+        _react2.default.createElement("img", { src: "assets/microlancer_icon.png", alt: "" })
+    );
+}
+
+function Client() {
+    return _react2.default.createElement(
+        "div",
+        { id: 'client' },
+        _react2.default.createElement(Title, null),
+        _react2.default.createElement(Clients, null),
+        _react2.default.createElement(Logos, null)
+    );
+}
+
+exports.default = Client;
 
 /***/ })
 /******/ ]);
