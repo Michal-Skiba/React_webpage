@@ -49,7 +49,6 @@
       }
     }
   }
-
   #button{
     color: white;
     width: 100%;
@@ -62,7 +61,7 @@
       font-size: 0.9rem;
     }
     p:last-of-type{
-      font-size: 1.7rem;
+      font-size: 1.6rem;
       font-weight: bold;
       margin-top: 5vh;
     }
@@ -80,24 +79,22 @@
 }
 
 @media screen and (min-width: 760px) {
-  #home{
-    #logo{
-      margin-left: 50px;
-      justify-content: flex-start;
-      img{
-        margin-top: auto;
-      }
-    }
-
+  #home {
     #header {
-      width: 100%;
+      width: 760px;
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      margin: 0 auto;
+      #logo {
+        img {
+          margin-top: auto;
+        }
+      }
       nav {
         margin-top: 9vh;
         ul {
-          margin-right: 40px;
+          margin-left: 100px;
+          margin-right: 10px;
           li {
             margin-left: 20px;
             font-size: 1.2Rem;
@@ -105,21 +102,33 @@
         }
       }
     }
-  }
-  #button{
-    p:first-of-type{
-      font-size: 2rem;
-    }
-    p:last-of-type{
-      font-size: 3rem;
+    #button {
+      p:first-of-type {
+        font-size: 2rem;
+      }
+      p:last-of-type {
+        font-size: 3rem;
+      }
     }
   }
 }
 
 @media screen and (min-width: 1200px) {
-  #home{
+  #home {
     #header {
-      justify-content: space-around;
+      width: 940px;
+      justify-content: space-between;
+      #logo {
+        margin-left: 40px;
+      }
+      nav {
+        ul {
+          li {
+            margin-left: 20px;
+            font-size: 1.2Rem;
+          }
+        }
+      }
     }
   }
 }
