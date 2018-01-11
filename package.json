@@ -5,7 +5,6 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "./node_modules/.bin/webpack-dev-server --hot",
     "webpack": "./node_modules/.bin/webpack"
   },
   "author": "michal",
@@ -35,6 +34,5 @@
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
     "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.9.1"
   }
 }

@@ -14,6 +14,7 @@
     width: 80%;
     margin: 0 30px;
     p{
+      font: $sans;
       font-size: 0.75rem;
       margin-top: 25px;
       text-align: justify;
@@ -27,6 +28,52 @@
   }
   .col-2{
     display: none;
+  }
+  #skills{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    #col-1{
+      margin: 20px auto;
+      width: 300px;
+      .fa{
+        padding-top: 10px;
+      }
+    }
+    #col-2{
+      margin: 20px auto;
+      width: 300px;
+      .fa{
+        margin: 0 auto;
+        padding-top: 20px;
+      }
+    }
+    .skillsComponent{
+      .circleSkills{
+        margin: 30px auto;
+        width: 70px;
+        height: 70px;
+        background-color: black;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        .fa{
+          color: white;
+        }
+      }
+      .contentSkills{
+        p:first-of-type{
+          font-size: 1rem;
+          font-weight: bold;
+        }
+        p:last-of-type{
+          font-size: 0.75rem;
+          margin-top: 10px;
+          color: darkgray;
+        }
+      }
+    }
   }
 }
 @media screen and (min-width: 760px) {
@@ -62,6 +109,45 @@
       margin: 40px 80px 0 80px;
     }
   }
+  #skills{
+    flex-direction: row;
+    width: 760px;
+    height: 790px;
+    margin: 0 auto;
+    #col-1{
+      margin: 100px 0;
+      width: 370px;
+      .fa{
+        padding-top: 10px;
+      }
+    }
+    #col-2{
+      margin: 100px 0;
+      width: 380px;
+      .fa{
+        padding-top: 20px;
+      }
+    }
+    .skillsComponent{
+      height: 90px;
+      margin-top: 60px;
+      display: flex;
+      flex-direction: row;
+      .circleSkills{
+        margin: 20px auto;
+      }
+      .contentSkills{
+        width: 270px;
+        margin: 0 20px;
+        p:first-of-type{
+          margin-top: 30px;
+        }
+        p:last-of-type{
+          margin-top: 20px;
+        }
+      }
+    }
+  }
 }
 @media screen and (min-width: 1200px) {
   #development{
@@ -87,12 +173,37 @@
       margin: 40px 10px 0 10px;
     }
   }
+
+
+  #skills{
+    width: 940px;
+    #col-1{
+      width: 370px;
+      margin: 100px 40px;
+    }
+    #col-2{
+      margin-top: 100px;
+      margin-bottom: 100px;
+      margin-left: 150px;
+      margin-right: 40px;
+      width: 370px;
+    }
+    .skillsComponent{
+      .circleSkills{
+        margin-top: 35px;
+      }
+      .contentSkills{
+        width: 280px;
+        p:first-of-type{
+          margin-top: 40px;
+        }
+        p:last-of-type{
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+
+
 }
 
-#circle {
-  width: 200px;
-  height: 200px;
-  background: url('assets/junior.jpg');
-  border-radius: 100%;
-  margin: 40px auto 0;
-}

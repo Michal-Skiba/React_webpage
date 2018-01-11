@@ -1,1 +1,215 @@
 @import "../variables/variables";
+
+@media screen and (min-width: 320px) {
+  //Client nie trzeba zmienić przy innych mediach oprocz wysokości
+  #client{
+    height: 1000px;
+    background: $backgroundIndentity;
+    #title{
+      margin: 0 auto;
+      padding-top: 100px;
+      width: 320px;
+      text-align: center;
+      p:first-of-type{
+        font: $sans;
+        font-size: 2.5rem;
+      }
+      p:last-of-type{
+        font: $sans;
+        color: darkgray;
+        font-size: 0.75rem;
+      }
+    }
+  }
+  #clients{
+    margin: 20px auto 0 auto;
+    width: 320px;
+
+    .circleClient{
+      width: 110px;
+      height: 110px;
+      background-color: #F34A53;
+      border-radius: 100%;
+      margin: 5px auto;
+    }
+    #clientsRow1 {
+      .circleClient {
+        background: url("assets/junior.jpg")no-repeat center/cover;
+
+      }
+    }
+    #clientsRow2 {
+      .circleClient {
+        background: url("assets/mr.jpg")no-repeat center/cover;
+
+      }
+    }
+    .display{
+      display: none;
+    }
+    .talk{
+      height: 140px;
+      width: 300px;
+      margin: 30px 10px;
+      background: white;
+      .triangle{
+        position: relative;
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid white;
+        margin: 0 auto;
+        bottom: 20px
+      }
+      p:first-of-type{
+        font-size: 1rem;
+        padding: 15px;
+        color: darkgray;
+      }
+      p:last-of-type{
+        font-size: 0.75rem;
+        color: dodgerblue;
+        padding: 0 15px;
+      }
+    }
+  }
+  #logos{
+    width: 320px;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+    img{
+      margin: 10px auto;
+    }
+  }
+
+}
+
+@media screen and (min-width: 760px) {
+  #client{
+    height: 970px;
+  }
+
+  #clients{
+    width: 760px;
+    .circleClient{
+      width: 200px;
+      height: 200px;
+      margin-top: 50px;
+    }
+    #clientsRow1 {
+      width: 760px;
+      display: flex;
+      flex-direction: row;
+      .circleClient {
+        background: url("assets/junior.jpg")no-repeat center/cover;
+      }
+    }
+    #clientsRow2 {
+      display: flex;
+      flex-direction: row;
+      width: 760px;
+      .circleClient {
+        display:none;
+      }
+      .display{
+        display: block;
+        background: url("assets/mr.jpg")no-repeat center/cover;
+      }
+    }
+
+
+    .talk{
+      height: 150px;
+      width: 500px;
+      margin: 80px 10px;
+      background: white;
+      #triangleLeft{
+        margin: 0;
+        top: 55px;
+        right: 30px;
+        transform:rotate(270deg);
+      }
+      #triangleRight{
+        top: 55px;
+        left: 260px;
+        transform:rotate(90deg);
+      }
+    }
+  }
+  #logos{
+    width: 760px;
+    margin: 100px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    img{
+      margin: 0 auto;
+    }
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  #client{
+    height: 970px;
+    #title{
+      width: auto;
+      p:first-of-type{
+        font-size: 3rem;
+      }
+      p:last-of-type{
+        font-size: 1rem;
+      }
+    }
+  }
+
+  #clients{
+    width: 940px; //
+    .circleClient{
+      width: 220px; //
+      height: 220px; //
+      margin-top: 50px;
+    }
+    #clientsRow1 {
+      width: 100%; //
+      display: flex;
+      flex-direction: row;
+      .circleClient {
+        background: url("assets/junior.jpg")no-repeat center/cover;
+      }
+    }
+    #clientsRow2 {
+      display: flex;
+      flex-direction: row;
+      width: 100%; //
+      .circleClient {
+        display:none;
+      }
+      .display{
+        display: block;
+        background: url("assets/mr.jpg")no-repeat center/cover;
+      }
+    }
+
+
+    .talk{
+      height: 160px;
+      width: 630px;
+      p:first-of-type{
+        font-size: 1.4rem;
+      }
+      p:last-of-type{
+        font-size: 0.9rem;
+      }
+      #triangleLeft{
+        margin: 0;
+        top: 65px;
+      }
+      #triangleRight{
+        top: 65px;
+        left: 325px;
+      }
+    }
+  }
+}

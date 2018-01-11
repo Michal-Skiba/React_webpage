@@ -34,10 +34,34 @@ function Branding() {
     );
 }
 
+
+function SkillsComponent(props){
+    return(
+        <div className={"skillsComponent"}>
+            <div className={"circleSkills"}>
+                <i className={props.link} aria-hidden="true"></i>
+            </div>
+            <div className={"contentSkills"}>
+                <p>{props.title}</p>
+                <p>{props.content}</p>
+            </div>
+        </div>
+    )
+}
+
 function Skills() {
+    let content = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa nesciunt numquam possimus";
     return (
         <div id={"skills"}>
-            <div id="circle">
+            <div id={"col-1"}>
+                <SkillsComponent link={"fa fa-user fa-3x"} title={"Branding & Identity"} content={content}/>
+                <SkillsComponent link={"fa fa-mobile fa-3x"} title={"Mobile app development"} content={content}/>
+                <SkillsComponent link={"fa fa-star fa-3x"} title={"UI/UX"} content={content}/>
+            </div>
+            <div id={"col-2"}>
+                <SkillsComponent link={"fa fa-desktop fa-2x"} title={"Web & Graphic Design"} content={content}/>
+                <SkillsComponent link={"fa fa-video-camera fa-2x"} title={"Animations"} content={content}/>
+                <SkillsComponent link={"fa fa-camera fa-2x"} title={"Photography"} content={content}/>
             </div>
         </div>
     );
